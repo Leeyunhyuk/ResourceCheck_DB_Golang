@@ -1,0 +1,13 @@
+[Unit]
+Description=CPU/Disk/Memory Usages log to Database program
+
+[Service]
+Type=simple
+User=root
+Group=root
+ExecStart=/root/go/src/testsyscheck
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
